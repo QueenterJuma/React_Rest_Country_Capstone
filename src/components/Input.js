@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { FaSearch } from 'react-icons/fa';
+// import { FaSearch } from 'react-icons/fa';
 import { getFilterTerm } from '../redux/country/CountryInfoSlice';
 
 const Input = () => {
@@ -17,7 +17,7 @@ const Input = () => {
         value={FilterTerm}
         onChange={handleValueChange}
       />
-      <FaSearch className="search-icon" />
+      {/* <FaSearch className="search-icon" /> */}
     </div>
   );
 };
