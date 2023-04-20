@@ -3,24 +3,16 @@ import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { filterByCode } from '../redux/country/FetchCountry';
-import { get } from '../redux/country/CountryInfoSlice';
 
 const Countryinfo = () => {
-  const { countryFiltered, error } = useSelector((state) => state.country);
+  const { countryFiltered } = useSelector((state) => state.country);
   const dispatch = useDispatch();
   const { code } = useParams();
   useEffect(() => {
     if (code) {
       dispatch(filterByCode(code.toLowerCase()));
     }
-
-    if (error) {
-      dispatch(error);
-    }
-    return () => {
-      dispatch(get());
-    };
-  }, [dispatch, code, error]);
+  }, [dispatch, code]);
   return (
     <div>
       <div>
@@ -42,91 +34,85 @@ const Countryinfo = () => {
             </h1>
             <ul className="data">
               <li>
-                <p>
+                <div>
                   Population:
                   {' '}
-                  <span>
-                    {countryFiltered[0].population}
+                  <p>
+                    {countryFiltered[0].population && (
+                      <span>{countryFiltered[0].population}</span>
+                    )}
                     {' '}
-                  </span>
-                </p>
+                  </p>
+                </div>
               </li>
               <li>
-                <p>
+                <div>
                   Time zone:
                   {' '}
-                  <span>
-                    {countryFiltered[0].timezones}
+                  <p>
+                    {countryFiltered[0].timezones && (
+                      <span>{countryFiltered[0].timezones}</span>
+                    )}
+                    {/* {countryFiltered[0].timezones} */}
                     {' '}
-                  </span>
-                </p>
+                  </p>
+                </div>
               </li>
               <li>
-                <p>
+                <div>
                   Capital:
                   {' '}
-                  <span>
-                    {countryFiltered[0].capital}
-                    {' '}
-                  </span>
-                </p>
+                  <p>
+                    {/* {countryFiltered[0].capital} */}
+                    {countryFiltered[0].capital && (
+                      <span>{countryFiltered[0].capital}</span>
+                    )}
+                  </p>
+                </div>
               </li>
               <li>
-                <p>
+                <div>
                   Languages:
                   {' '}
-                  <span>
+                  <p>
                     {Object.values(countryFiltered[0].languages)
                       .map((item) => item)
                       .join(',')}
-                  </span>
-                </p>
+                  </p>
+                </div>
               </li>
-              <li>
+              {/* <li>
                 <p>
-                  Currency:
-                  {' '}
-                  <span>
-                    {countryFiltered[0].currency}
-                    {' '}
-                  </span>
+                  Currency: <p>{countryFiltered[0].currency} </p>
                 </p>
-              </li>
+              </li> */}
               <li>
-                <p>
+                <div>
                   Subregion:
                   {' '}
-                  <span>
-                    {countryFiltered[0].subregion}
-                    {' '}
-                  </span>
+                  <p>
+                    {/* {countryFiltered[0].subregion} */}
+                    {countryFiltered[0].subregion && (
+                      <span>{countryFiltered[0].subregion}</span>
+                    )}
+                  </p>
+                </div>
+              </li>
+              {/* <li>
+                <p>
+                  Latitute: <p>{countryFiltered[0].latitute} </p>
                 </p>
               </li>
               <li>
                 <p>
-                  Latitute:
-                  {' '}
-                  <span>
-                    {countryFiltered[0].latitute}
-                    {' '}
-                  </span>
+                  Longitude: <span>{countryFiltered[0].longitude} </span>
                 </p>
-              </li>
-              <li>
-                <p>
-                  Longitude:
-                  {' '}
-                  <span>
-                    {countryFiltered[0].longitude}
-                    {' '}
-                  </span>
-                </p>
-              </li>
+              </li> */}
             </ul>
           </div>
         </>
       ) : (
-        <div>No data found</div>
+        <div>Loading...</div>
       )}
     </div>
   );

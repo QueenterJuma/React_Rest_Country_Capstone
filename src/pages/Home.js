@@ -1,4 +1,4 @@
-import oceania from '../image/Oceania_stub.jpg';
+import earth from '../image/earth.jpg';
 import Input from '../components/Input';
 import HomeInfo from '../components/Homeinfo';
 
@@ -6,7 +6,7 @@ const Home = () => (
   <div>
     <div>
       <div>
-        <img src={oceania} alt="ocenia" />
+        <img src={earth} alt="ocenia" />
       </div>
       <div className="banner-text">
         <p className="b1"> OCEANIA</p>

@@ -73,9 +73,9 @@ export const countriesSlice = createSlice({
       .addCase(filterByCode.fulfilled, (state, action) => {
         const newState = { ...state };
         newState.loading = false;
-        newState.message = action.payload;
+        // newState.message = action.payload;
         newState.error = true;
-        newState.countryFiltered = [];
+        newState.countryFiltered = action.payload;
         return newState;
       })
       .addCase(filterByCode.rejected, (state, action) => {

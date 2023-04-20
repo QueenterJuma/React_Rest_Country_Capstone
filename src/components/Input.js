@@ -17,7 +17,6 @@ const Input = () => {
         value={FilterTerm}
         onChange={handleValueChange}
       />
-      {/* <FaSearch className="search-icon" /> */}
     </div>
   );
 };
