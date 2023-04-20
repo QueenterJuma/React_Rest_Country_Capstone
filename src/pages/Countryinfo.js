@@ -43,22 +43,38 @@ const Countryinfo = () => {
             <ul className="data">
               <li>
                 <p>
-                  Population: <span>{countryFiltered[0].population} </span>
+                  Population:
+                  {' '}
+                  <span>
+                    {countryFiltered[0].population}
+                    {' '}
+                  </span>
                 </p>
               </li>
               <li>
                 <p>
-                  Time zone: <span>{countryFiltered[0].timezones} </span>
+                  Time zone:
+                  {' '}
+                  <span>
+                    {countryFiltered[0].timezones}
+                    {' '}
+                  </span>
                 </p>
               </li>
               <li>
                 <p>
-                  Capital: <span>{countryFiltered[0].capital} </span>
+                  Capital:
+                  {' '}
+                  <span>
+                    {countryFiltered[0].capital}
+                    {' '}
+                  </span>
                 </p>
               </li>
               <li>
                 <p>
-                  Languages:{' '}
+                  Languages:
+                  {' '}
                   <span>
                     {Object.values(countryFiltered[0].languages)
                       .map((item) => item)
@@ -68,22 +84,42 @@ const Countryinfo = () => {
               </li>
               <li>
                 <p>
-                  Currency: <span>{countryFiltered[0].currency} </span>
+                  Currency:
+                  {' '}
+                  <span>
+                    {countryFiltered[0].currency}
+                    {' '}
+                  </span>
                 </p>
               </li>
               <li>
                 <p>
-                  Subregion: <span>{countryFiltered[0].subregion} </span>
+                  Subregion:
+                  {' '}
+                  <span>
+                    {countryFiltered[0].subregion}
+                    {' '}
+                  </span>
                 </p>
               </li>
               <li>
                 <p>
-                  Latitute: <span>{countryFiltered[0].latitute} </span>
+                  Latitute:
+                  {' '}
+                  <span>
+                    {countryFiltered[0].latitute}
+                    {' '}
+                  </span>
                 </p>
               </li>
               <li>
                 <p>
-                  Longitude: <span>{countryFiltered[0].longitude} </span>
+                  Longitude:
+                  {' '}
+                  <span>
+                    {countryFiltered[0].longitude}
+                    {' '}
+                  </span>
                 </p>
               </li>
             </ul>

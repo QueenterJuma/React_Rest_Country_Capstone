@@ -9,8 +9,10 @@ import {
 
 const HomeInfo = () => {
   const dispatch = useDispatch();
-  const { Data, success, error, loading, oceania, FilterTerm } = useSelector(
-    (state) => state.country
+  const {
+    Data, success, error, loading, oceania, FilterTerm,
+  } = useSelector(
+    (state) => state.country,
   );
   useEffect(() => {
     dispatch(oceaniaCountries());
@@ -21,9 +23,7 @@ const HomeInfo = () => {
       dispatch(error);
     }
   }, [dispatch, error, success, oceania]);
-  const data = Data.filter((item) =>
-    item.name.common.toLowerCase().includes(FilterTerm)
-  );
+  const data = Data.filter((item) => item.name.common.toLowerCase().includes(FilterTerm));
   // const data = Array.isArray(Data)
   //   ? Data.filter((item) => item.name.common.toLowerCase().includes(FilterTerm))
   //   : [];
@@ -33,8 +33,8 @@ const HomeInfo = () => {
       {loading ? (
         <h1>Loading</h1>
       ) : (
-        data.length > 0 &&
-        data.map((item) => (
+        data.length > 0
+        && data.map((item) => (
           <Link
             className="homeinfo-card"
             key={item.name.common}
@@ -45,7 +45,10 @@ const HomeInfo = () => {
             </p>
             <img src={item.flags.png} alt={item.flags.alt} className="-image" />
             <div className="homeinfo-content">
-              <h3>{item.name.common} </h3>
+              <h3>
+                {item.name.common}
+                {' '}
+              </h3>
               <p>
                 {' '}
                 <span>{item.population}</span>

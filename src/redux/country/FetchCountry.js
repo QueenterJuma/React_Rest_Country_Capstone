@@ -13,7 +13,7 @@ export const oceaniaCountries = createAsyncThunk(
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
     }
-  }
+  },
 );
 
 // export default oceaniaCountries;
@@ -23,13 +23,13 @@ export const filterByCode = createAsyncThunk(
   async (code, thunkAPI) => {
     try {
       const response = await axios.get(
-        `https://restcountries.com/v3.1/alpha?codes=${code}`
+        `https://restcountries.com/v3.1/alpha?codes=${code}`,
       );
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
     }
-  }
+  },
 );
 
 export const filterByCapital = createAsyncThunk(
@@ -37,12 +37,12 @@ export const filterByCapital = createAsyncThunk(
   async (capital, thunkAPI) => {
     try {
       const response = await axios.get(
-        `https://restcountries.com/v3.1/capital/${capital}`
+        `https://restcountries.com/v3.1/capital/${capital}`,
       );
       // const data = await response.axios();
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
     }
-  }
+  },
 );

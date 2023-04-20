@@ -1,6 +1,6 @@
 import oceania from '../image/Oceania_stub.jpg';
-import Input from './input';
-import HomeInfo from './Homeinfo';
+import Input from '../components/Input';
+import HomeInfo from '../components/Homeinfo';
 
 const Home = () => (
   <div>
