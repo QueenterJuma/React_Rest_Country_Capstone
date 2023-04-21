@@ -1,7 +1,8 @@
 import React from 'react';
-import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
+import {
+  BsGithub, BsLinkedin, BsTwitter, BsGearWide,
+} from 'react-icons/bs';
 import { IoMdMic } from 'react-icons/io';
-import { MdPerson } from 'react-icons/md';
 
 const Navbar = () => (
   <nav>
@@ -18,7 +19,7 @@ const Navbar = () => (
     </div>
     <div className="nav-iconc">
       <IoMdMic />
-      <MdPerson />
+      <BsGearWide />
     </div>
   </nav>
 );
