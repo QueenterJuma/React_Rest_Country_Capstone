@@ -4,23 +4,18 @@ import HomeInfo from '../components/Homeinfo';
 
 const Home = () => (
   <div>
-    <div>
-      <div>
-        <img src={earth} alt="ocenia" />
+    <div className="content1">
+      <div className="img-box">
+        <img className="world-img spiner" src={earth} alt="world" />
       </div>
       <div className="banner-text">
-        <p className="b1"> OCEANIA</p>
-        {/* <p className="b2">
-          {data.length}
-
-          nations
-        </p> */}
+        <p className="ban1"> The Continents</p>
       </div>
     </div>
     <div>
       <Input />
     </div>
-    <h2>Oceania Countries</h2>
+    <h2 className="stats">STATS BY COUNTRY</h2>
     <HomeInfo />
   </div>
 );
