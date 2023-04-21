@@ -1,40 +1,50 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { BsArrowRightCircle } from 'react-icons/bs';
+import { BsArrowLeftCircle } from 'react-icons/bs';
+// import { Path } from 'three';
 import { filterByCode } from '../redux/country/FetchCountry';
 
 const Countryinfo = () => {
   const { countryFiltered } = useSelector((state) => state.country);
   const dispatch = useDispatch();
   const { code } = useParams();
+  // const navigate = useNavigate;
   useEffect(() => {
     if (code) {
       dispatch(filterByCode(code.toLowerCase()));
     }
   }, [dispatch, code]);
+
+  // const handleClick = () => {
+  //   navigate('/');
+  //   Path.reload();
+  // };
   return (
     <div>
       <div>
-        <BsArrowRightCircle />
+        {/* onClick={handleClick} */}
+        <BsArrowLeftCircle className="back-icon" />
       </div>
       {countryFiltered.length > 0 ? (
         <>
-          <div className="info-container">
-            <img
-              src={countryFiltered[0].coatOfArms.png}
-              alt={countryFiltered[0].coatOfArms.alt}
-              className="info-image"
-            />
-            <p>{countryFiltered[0].name.common}</p>
+          <div className="content1 spi">
+            <div className="box-img1">
+              <img
+                src={countryFiltered[0].coatOfArms.png}
+                alt={countryFiltered[0].coatOfArms.alt}
+                className="info-image"
+              />
+            </div>
+            <p className="banner-text">{countryFiltered[0].name.common}</p>
           </div>
           <div className="country-data">
-            <h1>
+            {/* <h1>
               <span>{countryFiltered[0].name.official}</span>
-            </h1>
-            <ul className="data">
+            </h1> */}
+            <ul>
               <li>
-                <div>
+                <div className="val">
                   Population:
                   {' '}
                   <p>
@@ -45,33 +55,31 @@ const Countryinfo = () => {
                   </p>
                 </div>
               </li>
-              <li>
-                <div>
+              <li className="new-Color">
+                <div className="val">
                   Time zone:
                   {' '}
                   <p>
                     {countryFiltered[0].timezones && (
                       <span>{countryFiltered[0].timezones}</span>
                     )}
-                    {/* {countryFiltered[0].timezones} */}
                     {' '}
                   </p>
                 </div>
               </li>
               <li>
-                <div>
+                <div className="val">
                   Capital:
                   {' '}
                   <p>
-                    {/* {countryFiltered[0].capital} */}
                     {countryFiltered[0].capital && (
                       <span>{countryFiltered[0].capital}</span>
                     )}
                   </p>
                 </div>
               </li>
-              <li>
-                <div>
+              <li className="new-Color">
+                <div className="val">
                   Languages:
                   {' '}
                   <p>
@@ -81,33 +89,17 @@ const Countryinfo = () => {
                   </p>
                 </div>
               </li>
-              {/* <li>
-                <p>
-                  Currency: <p>{countryFiltered[0].currency} </p>
-                </p>
-              </li> */}
               <li>
-                <div>
+                <div className="val">
                   Subregion:
                   {' '}
                   <p>
-                    {/* {countryFiltered[0].subregion} */}
                     {countryFiltered[0].subregion && (
                       <span>{countryFiltered[0].subregion}</span>
                     )}
                   </p>
                 </div>
               </li>
-              {/* <li>
-                <p>
-                  Latitute: <p>{countryFiltered[0].latitute} </p>
-                </p>
-              </li>
-              <li>
-                <p>
-                  Longitude: <span>{countryFiltered[0].longitude} </span>
-                </p>
-              </li> */}
             </ul>
           </div>
         </>
