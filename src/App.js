@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+// import Layout from './components/Layout';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Countryinfo from './pages/Countryinfo';
@@ -7,6 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      {/* <Routes path="/" element={<Layout />}></Routes> */}
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
