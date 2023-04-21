@@ -4,8 +4,6 @@ import {
   filterByCode,
   filterByCapital,
 } from './FetchCountry';
-// filterByCode,
-// filterByCapital,
 
 const initialState = {
   Data: [],
