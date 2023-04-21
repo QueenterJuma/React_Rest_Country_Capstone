@@ -24,10 +24,6 @@ const HomeInfo = () => {
     }
   }, [dispatch, error, success, oceania]);
   const data = Data.filter((item) => item.name.common.toLowerCase().includes(FilterTerm));
-  // const data = Array.isArray(Data)
-  //   ? Data.filter((item) => item.name.common.toLowerCase().includes(FilterTerm))
-  //   : [];
-  // console.log(Data);
   return (
     <div className="homeinfo-container">
       {loading ? (
@@ -40,19 +36,27 @@ const HomeInfo = () => {
             key={item.name.common}
             to={`/${item.cioc}`}
           >
-            <p className="next">
-              <BsFillArrowRightCircleFill className="next-icon" />
-            </p>
-            <img src={item.flags.png} alt={item.flags.alt} className="-image" />
-            <div className="homeinfo-content">
+            <div className="next-info">
               <h3>
                 {item.name.common}
                 {' '}
               </h3>
-              <p>
-                {' '}
-                <span>{item.population}</span>
+              <p className="next">
+                <BsFillArrowRightCircleFill className="next-icon" />
               </p>
+            </div>
+            <div className="flag-content">
+              <img
+                src={item.flags.png}
+                alt={item.flags.alt}
+                className="flag-image"
+              />
+              <div className="homeinfo-content">
+                <p className="flag-text">
+                  {' '}
+                  <span>{item.population}</span>
+                </p>
+              </div>
             </div>
           </Link>
         ))
