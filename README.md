@@ -79,8 +79,6 @@ I select an API(https://restcountries.com/v3.1/all) that provides numeric data a
 </details>
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
- 
- 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -92,7 +90,6 @@ I select an API(https://restcountries.com/v3.1/all) that provides numeric data a
 - [ScreenRec Presentation](https://www.loom.com/share/443f2a97caa2443881bae188dfea2eaa)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
- 
  
 ## 💻 Getting Started <a name="getting-started"></a>
  
@@ -136,16 +133,10 @@ To run the project, open open the terminal and run npm start,it will be opened i
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
-
 ## 🔭 Future Features <a name="future-features"></a>
 - Implement filter by Capital city
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-- [ ] **Homepage**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -155,13 +146,11 @@ Feel free to check the [issues page](https://github.com/QueenterJuma/react-capst
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
- 
 ## ⭐️ Show your support <a name="support"></a>
  
 If the project was great as your view, don't hesitate to share and give it a star.
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
- 
  
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
  
@@ -170,7 +159,6 @@ If the project was great as your view, don't hesitate to share and give it a sta
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
-
  ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
 - **how will i setup this project in local machine**
