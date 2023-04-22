@@ -134,7 +134,7 @@ To run the project, open open the terminal and run npm start,it will be opened i
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## 🔭 Future Features <a name="future-features"></a>
-- Implement filter by Capital city
+- Add filter by Capital city
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
