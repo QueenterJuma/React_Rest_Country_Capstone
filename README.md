@@ -27,7 +27,10 @@ One attachment
 
 # react-capstone-project <a name="about-project"></a>
 
-**react-capstone-project** "bookstore-App" is a Single Page Application website that lets users to: Display a list of books, Add a book and Remove a selected book.
+**react-capstone-project** This React capstone project is about building a mobile web application to check a list of metrics (numeric values) that I create making use of React and Redux and follow the design by [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
+
+I select an API(https://restcountries.com/v3.1/all) that provides numeric data about the whole countries in the World and then build the webapp around it. The webapp has several pages:
+- Home page with a list of countrie that could be filtered by name.
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML
@@ -48,11 +51,9 @@ One attachment
 
 ### Key Features <a name="key-features"></a>
 
-- **Initialize project with components (React only)**
-- **Add reducers and actions.**
-- **Use Redux in React components.**
-- **Connect to API.**
-- **Styling.**
+- **React front end framwork**
+- **Git-flow**
+- **Es6 module**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,14 +69,19 @@ One attachment
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
-<!-- LIVE DEMO -->
  
-## 🚀 Live Demo <a name="[https://bookstore-app-zpb4.onrender.com]()"></a>
- 
- 
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [You can check the live demo here]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📺 Presentation <a name="presentation"></a>
+- [ScreenRec Presentation]()
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
-<!-- GETTING STARTED -->
  
 ## 💻 Getting Started <a name="getting-started"></a>
  
@@ -85,9 +91,8 @@ To get a local copy up and running, follow these steps.
  
 In order to run this project you need:
  
-- A computer.
-- Internet access.
-- A modern web browser.
+- Basic knowdlenge of HTML, CSS, javascript and the code editor of your choice.
+- Basic knowlege of the computer operating system.
  
 ### Setup
  
@@ -110,8 +115,6 @@ Install this project with:
  
 To run the project, open open the terminal and run npm start,it will be opened in your web browser.
  
-<!-- AUTHORS -->
- 
 ## 👥 Author <a name="author"></a>
 
 👤 **Queenter Juma**
@@ -125,7 +128,7 @@ To run the project, open open the terminal and run npm start,it will be opened i
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
+- Implement filter by Capital city
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,7 +145,6 @@ Feel free to check the [issues page](https://github.com/QueenterJuma/book-store/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
-<!-- SUPPORT -->
  
 ## ⭐️ Show your support <a name="support"></a>
  
@@ -150,14 +152,26 @@ If the project was great as your view, don't hesitate to share and give it a sta
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
-<!-- ACKNOWLEDGEMENTS -->
  
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
  
-Inspired by Microverse comunity, thanks to them.
+- [the whole Microverse Community](https://www.microverse.org/)
+- [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) for his beautiful design
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
-<!-- LICENSE -->
+
+ ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **how will i setup this project in local machine**
+
+  - run the following command in the terminal: git clone 
+
+- **which code editor should i use**
+
+  - You can use any editor of your choice but i recommend vs code.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## 📝 License <a name="license"></a>
 
