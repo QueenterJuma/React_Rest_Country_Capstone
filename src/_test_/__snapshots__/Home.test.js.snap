@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<div>
+  <div
+    className="content1"
+  >
+    <div
+      className="img-box"
+    >
+      <img
+        alt="world"
+        className="world-img spiner"
+        src="earth.jpg"
+      />
+    </div>
+    <div
+      className="banner-text"
+    >
+      <p
+        className="ban1"
+      >
+         The Continents
+      </p>
+    </div>
+  </div>
+  <div>
+    <div
+      className="input-container"
+    >
+      <input
+        className="search-input"
+        onChange={[Function]}
+        placeholder="Search"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <h2
+    className="stats"
+  >
+    STATS BY COUNTRY
+  </h2>
+  <div
+    className="homeinfo-container"
+  />
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="content1"
+  >
+    <div
+      className="img-box"
+    >
+      <img
+        alt="world"
+        className="world-img spiner"
+        src="earth.jpg"
+      />
+    </div>
+    <div
+      className="banner-text"
+    >
+      <p
+        className="ban1"
+      >
+         The Continents
+      </p>
+    </div>
+  </div>
+  <div>
+    <div
+      className="input-container"
+    >
+      <input
+        className="search-input"
+        onChange={[Function]}
+        placeholder="Search"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <h2
+    className="stats"
+  >
+    STATS BY COUNTRY
+  </h2>
+  <div
+    className="homeinfo-container"
+  />
+</div>
+`;
