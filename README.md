@@ -51,7 +51,18 @@ I select an API(https://restcountries.com/v3.1/all) that provides numeric data a
 
 ### Key Features <a name="key-features"></a>
 
-- **React front end framwork**
+- **Select API**
+- **Build files structure for my React app.** 
+- **Prepare routes and navigation in my app**
+- **display a list of items and filter them**
+- **Create the tests for the application**
+- **Style my components to match the design provided**
+- **Deploy the project and test for final details**
+- **Record a video for my project.**
+- **Create a good README and PR description.**
+
+
+**React front end framwork**
 - **Git-flow**
 - **Es6 module**
 
