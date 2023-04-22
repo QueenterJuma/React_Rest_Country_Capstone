@@ -84,7 +84,7 @@ I select an API(https://restcountries.com/v3.1/all) that provides numeric data a
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [You can check the live demo here]()
+- [You can check the live demo here](https://the-countries.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +111,7 @@ Clone this repository to your desired folder:
  
 ```sh
   cd my-folder
-  git clone git@github.com:https://github.com/QueenterJuma/book-store.git
+  git clone git@github.com:https://github.com/QueenterJuma/react-capstone-project.git
 ```
  
 ### Install
@@ -136,7 +136,6 @@ To run the project, open open the terminal and run npm start,it will be opened i
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 - Implement filter by Capital city
@@ -152,7 +151,7 @@ To run the project, open open the terminal and run npm start,it will be opened i
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/QueenterJuma/book-store/issues/).
+Feel free to check the [issues page](https://github.com/QueenterJuma/react-capstone-project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
@@ -176,7 +175,7 @@ If the project was great as your view, don't hesitate to share and give it a sta
 
 - **how will i setup this project in local machine**
 
-  - run the following command in the terminal: git clone 
+  - run the following command in the terminal: git clone https://github.com/QueenterJuma/react-capstone-project.git
 
 - **which code editor should i use**
 
