@@ -87,7 +87,7 @@ I select an API(https://restcountries.com/v3.1/all) that provides numeric data a
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📺 Presentation <a name="presentation"></a>
-- [ScreenRec Presentation](https://www.loom.com/share/443f2a97caa2443881bae188dfea2eaa)
+- [ScreenRec Presentation](https://www.loom.com/share/84d346b8b1284ff0b03684ae548fbe76)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
@@ -122,6 +122,13 @@ Install this project with:
 ### Usage
  
 To run the project, open open the terminal and run npm start,it will be opened in your web browser.
+
+### Deployment
+You can deploy this project using: new, static site, conect repo name, creat a unique name for the poject, Pulish git repository
+
+### Run tests
+To run tests, run the following command:
+- npm test
  
 ## 👥 Author <a name="author"></a>
 
@@ -134,7 +141,7 @@ To run the project, open open the terminal and run npm start,it will be opened i
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## 🔭 Future Features <a name="future-features"></a>
-- Implement filter by Capital city
+- Add filter by Capital city
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

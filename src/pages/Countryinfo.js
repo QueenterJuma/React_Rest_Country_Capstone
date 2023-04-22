@@ -22,11 +22,18 @@ const Countryinfo = () => {
         <>
           <div className="content1 spi">
             <div className="box-img1">
-              <img
+              {countryFiltered[0].coatOfArms && (
+                <img
+                  src={countryFiltered[0].coatOfArms.png}
+                  alt={countryFiltered[0].coatOfArms.alt}
+                  className="info-image spiner"
+                />
+              )}
+              {/* <img
                 src={countryFiltered[0].coatOfArms.png}
                 alt={countryFiltered[0].coatOfArms.alt}
                 className="info-image spiner"
-              />
+              /> */}
             </div>
             <p className="banner-text">{countryFiltered[0].name.common}</p>
           </div>
