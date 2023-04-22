@@ -10,7 +10,7 @@ import {
 const HomeInfo = () => {
   const dispatch = useDispatch();
   const {
-    Data, success, error, loading, oceania, FilterTerm,
+    Data, loading, oceania, FilterTerm,
   } = useSelector(
     (state) => state.country,
   );
@@ -19,10 +19,7 @@ const HomeInfo = () => {
     if (oceania) {
       dispatch(filterByCapital(oceania));
     }
-    if (error) {
-      dispatch(error);
-    }
-  }, [dispatch, error, success, oceania]);
+  }, [dispatch, oceania]);
   const data = Data.filter((item) => item.name.common.toLowerCase().includes(FilterTerm));
   return (
     <div className="homeinfo-container">

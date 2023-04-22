@@ -1,31 +1,23 @@
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { BsArrowLeftCircle } from 'react-icons/bs';
-// import { Path } from 'three';
 import { filterByCode } from '../redux/country/FetchCountry';
 
 const Countryinfo = () => {
   const { countryFiltered } = useSelector((state) => state.country);
   const dispatch = useDispatch();
   const { code } = useParams();
-  // const navigate = useNavigate;
   useEffect(() => {
     if (code) {
       dispatch(filterByCode(code.toLowerCase()));
     }
   }, [dispatch, code]);
-
-  // const handleClick = () => {
-  //   navigate('/');
-  //   Path.reload();
-  // };
   return (
     <div>
-      <div>
-        {/* onClick={handleClick} */}
+      <NavLink to="/">
         <BsArrowLeftCircle className="back-icon" />
-      </div>
+      </NavLink>
       {countryFiltered.length > 0 ? (
         <>
           <div className="content1 spi">
@@ -33,18 +25,15 @@ const Countryinfo = () => {
               <img
                 src={countryFiltered[0].coatOfArms.png}
                 alt={countryFiltered[0].coatOfArms.alt}
-                className="info-image"
+                className="info-image spiner"
               />
             </div>
             <p className="banner-text">{countryFiltered[0].name.common}</p>
           </div>
           <div className="country-data">
-            {/* <h1>
-              <span>{countryFiltered[0].name.official}</span>
-            </h1> */}
             <ul>
               <li>
-                <div className="val">
+                <div className="val flex">
                   Population:
                   {' '}
                   <p>
@@ -56,7 +45,7 @@ const Countryinfo = () => {
                 </div>
               </li>
               <li className="new-Color">
-                <div className="val">
+                <div className="val flex">
                   Time zone:
                   {' '}
                   <p>
@@ -68,7 +57,7 @@ const Countryinfo = () => {
                 </div>
               </li>
               <li>
-                <div className="val">
+                <div className="val flex">
                   Capital:
                   {' '}
                   <p>
@@ -79,7 +68,7 @@ const Countryinfo = () => {
                 </div>
               </li>
               <li className="new-Color">
-                <div className="val">
+                <div className="val flex">
                   Languages:
                   {' '}
                   <p>
@@ -90,7 +79,7 @@ const Countryinfo = () => {
                 </div>
               </li>
               <li>
-                <div className="val">
+                <div className="val flex">
                   Subregion:
                   {' '}
                   <p>

@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from 'react-redux';
-// import { FaSearch } from 'react-icons/fa';
 import { getFilterTerm } from '../redux/country/CountryInfoSlice';
 
 const Input = () => {
