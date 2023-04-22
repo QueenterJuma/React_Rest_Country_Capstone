@@ -11,12 +11,19 @@
   --royal: #5687e3;
   --white: #fff;
   --d-flex: flex;
+  --rgb: rgb(65, 105, 225);
+  --purp: #580786;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .App {
   background-color: var(--royal);
   padding: 2%; 
-  /* 2% 7% 6%; */
   min-height: 100vh;
 }
 
@@ -45,7 +52,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: center;
-  box-shadow: 5px 5px 10px 10px rgb(65, 105, 225);
+  box-shadow: 5px 5px 10px 10px var(--rgb);
 }
 
 .img-box {
@@ -53,10 +60,10 @@ nav {
   width: 50%;
   opacity: 0.5;
   justify-content: center;
-  border: 1px solid royalblue;
+  border: 1px solid var(--royal);
   -webkit-filter: grayscale(80%);
   filter: grayscale(80%);
-  background-color: rgb(65, 105, 225);
+  background-color: var(--rgb);
   padding: 10px;
   border-radius: 3px;
 }
@@ -82,15 +89,15 @@ nav {
 
 .banner-text {
   display: flex;
-  border: 1px solid royalblue;
-  background-color: royalblue;
+  border: 1px solid var(--royal);
+  background-color: var(--royal);
   flex-direction: column;
   width: 50%;
   align-items: center;
   justify-content: center;
   -webkit-filter: grayscale(45%);
   filter: grayscale(45%);
-  color: #fff;
+  color: var(--white);
   font-size: 2rem;
   font-weight: bolder;
 }
@@ -112,7 +119,7 @@ nav {
 .stats {
   margin-top: 30px;
   margin-bottom: 10px;
-  color: #fff;
+  color: var(--white);
   font-size: 15px;
 }
 .homeinfo-container {
@@ -122,20 +129,24 @@ nav {
 
 .homeinfo-card {
 display: flex;
-  border: 1px solid royalblue;
+  border: 1px solid var(--royal);
   flex-direction: column;
   -webkit-filter: grayscale(10%);
   filter: grayscale(10%);
-  box-shadow: 3px 5px 5px rgb(65, 105, 225);
+  box-shadow: 3px 5px 5px var(--rgb);
   text-decoration: none;
 }
 
 .next-info {
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color: var(--white);
   padding: 10px;
   text-decoration: none;
+}
+
+.back-icon {
+  color: var(--white);
 }
 
 .flag-content {
@@ -166,7 +177,7 @@ display: flex;
   padding-right: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
-  color: #460c68;
+  color: var(--purp);
 }
 
 .flag-text {
@@ -184,10 +195,10 @@ display: flex;
   display: flex;
   width: 50%;
   justify-content: center;
-  border: 1px solid royalblue;
+  border: 1px solid var(--royal);
   -webkit-filter: grayscale(70%);
   filter: grayscale(35%);
-  background-color: royalblue;
+  background-color: var(--royal);
   padding: 10px;
   border-radius: 3px;
 }
@@ -201,8 +212,9 @@ display: flex;
 ul {
   list-style-type: none;
   padding: 0;
-  color: #460c68;
+  color: var(--purp);
 }
+
 
 ul li {
   display: flex;
@@ -210,7 +222,7 @@ ul li {
   align-items: center;
   padding: 12px 16px;
   height: 50px;
-  border-top: 1px solid royalblue;
+  border-top: 1px solid var(--royal);
 }
 
 ul li:last-child {
@@ -222,7 +234,7 @@ ul li:last-child {
 }
 
 .new-Color {
-  background-color: royalblue;
+  background-color: var(--royal);
   -webkit-filter: grayscale(100%);
   filter: grayscale(20%);
 }
