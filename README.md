@@ -122,6 +122,17 @@ Install this project with:
 ### Usage
  
 To run the project, open open the terminal and run npm start,it will be opened in your web browser.
+
+## Run tests
+To run tests, run the following command:
+````npm test
+
+## Deployment
+You can deploy this project using: on render.com:
+```new, static site
+```conect repo name
+```creat a unique name for the poject
+```Pulish git repository
  
 ## 👥 Author <a name="author"></a>
 
