@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countryinfo renders correctly 1`] = `
+<div>
+  <a
+    aria-current="page"
+    className="active"
+    href="/"
+    onClick={[Function]}
+  >
+    <svg
+      className="back-icon"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 16 16"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </a>
+  <div
+    className="content1 spi"
+  >
+    <div
+      className="box-img1"
+    />
+    <p
+      className="banner-text"
+    >
+      United States
+    </p>
+  </div>
+  <div
+    className="country-data"
+  >
+    <ul>
+      <li>
+        <div
+          className="val flex"
+        >
+          Population:
+           
+          <p>
+            <span>
+              328239523
+            </span>
+             
+          </p>
+        </div>
+      </li>
+      <li
+        className="new-Color"
+      >
+        <div
+          className="val flex"
+        >
+          Time zone:
+           
+          <p>
+            <span>
+              UTC-12:00
+              UTC-11:00
+              UTC-10:00
+              UTC-09:00
+              UTC-08:00
+              UTC-07:00
+              UTC-06:00
+              UTC-05:00
+              UTC-04:00
+              UTC+10:00
+              UTC+12:00
+            </span>
+             
+          </p>
+        </div>
+      </li>
+      <li>
+        <div
+          className="val flex"
+        >
+          Capital:
+           
+          <p>
+            <span>
+              Washington, D.C.
+            </span>
+          </p>
+        </div>
+      </li>
+      <li
+        className="new-Color"
+      >
+        <div
+          className="val flex"
+        >
+          Languages:
+           
+          <p>
+            English
+          </p>
+        </div>
+      </li>
+      <li>
+        <div
+          className="val flex"
+        >
+          Subregion:
+           
+          <p>
+            <span>
+              North America
+            </span>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
